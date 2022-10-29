@@ -9,3 +9,9 @@ void add_to(struct vec2 *vector, struct vec2 offset) {
     vector->x += offset.x;
     vector->y += offset.y;
 }
+
+struct vec2 scale(struct vec2 vector, double factor) {
+    vector.x *= factor;
+    vector.y *= factor;
+    return vector;
+}
