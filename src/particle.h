@@ -11,5 +11,6 @@ struct particle {
 };
 
 void particle_apply_force(struct particle *particle, struct vec2 force);
+void particle_step(struct particle *particle);
 
 #endif
