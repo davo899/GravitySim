@@ -3,12 +3,9 @@
 struct particle particle_init(double mass, double x, double y) {
     struct particle particle;
     particle.mass = mass;
-    particle.position.x = x;
-    particle.position.y = y;
-    particle.velocity.x = 0;
-    particle.velocity.y = 0;
-    particle.force.x = 0;
-    particle.force.y = 0;
+    particle.position = vec2_init(x, y);
+    particle.velocity = vec2_init_zero();
+    particle.force = vec2_init_zero();
     return particle;
 }
 
