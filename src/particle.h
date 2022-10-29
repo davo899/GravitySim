@@ -8,6 +8,8 @@ struct particle {
     struct vec2 position;
     struct vec2 velocity;
     struct vec2 force;
-}
+};
+
+void particle_apply_force(struct particle *particle, struct vec2 force);
 
 #endif
