@@ -1,3 +1,5 @@
+#include "vec2.h"
+
 struct vec2 add(struct vec2 vector_a, struct vec2 vector_b) {
     struct vec2 result;
     result.x = vector_a.x + vector_b.x;
