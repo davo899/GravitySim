@@ -16,3 +16,9 @@ struct vec2 scale(struct vec2 vector, double factor) {
     vector.y *= factor;
     return vector;
 }
+
+double distance(struct vec2 position_a, struct vec2 position_b) {
+    double x_diff = position_a.x - position_b.x;
+    double y_diff = position_a.y - position_b.y;
+    return sqrt((x_diff * x_diff) + (y_diff * y_diff));
+}
