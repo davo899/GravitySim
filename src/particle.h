@@ -10,6 +10,7 @@ struct particle {
     struct vec2 force;
 };
 
+struct particle particle_init(double mass, double x, double y);
 void particle_apply_force(struct particle *particle, struct vec2 force);
 void particle_step(struct particle *particle);
 
