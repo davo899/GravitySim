@@ -1,5 +1,16 @@
 #include "vec2.h"
 
+struct vec2 vec2_init(double x, double y) {
+    struct vec2 vector;
+    vector.x = x;
+    vector.y = y;
+    return vector;
+}
+
+struct vec2 vec2_init_zero() {
+    return vec2_init(0, 0);
+}
+
 struct vec2 add(struct vec2 vector_a, struct vec2 vector_b) {
     vector_a.x += vector_b.x;
     vector_a.y += vector_b.y;
